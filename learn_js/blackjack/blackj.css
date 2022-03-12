@@ -1,0 +1,20 @@
+body {
+    background-color: green;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+    font-weight: bold;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+p {
+    
+}
+
+#message-el {
+    
+    font-style: italic;
+}
