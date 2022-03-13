@@ -72,10 +72,10 @@ function startGame(){
     dpoints = calcPoints(dcards);
     if (dpoints === 21 ){
         ppoints === 21 ? draw() : dealerWon();
+        reset();
+        return;
     }
     checkPlayerScore();
-
-
 }
 
 function calcPoints(cards){
