@@ -7,15 +7,22 @@
 
 <body>
     <h1>BlackJack</h1>
-    <p id="message-el">Want to play a round?</p>
-    
-    <button id="start-btn">Start Game</button>
-    <div id="game-wrapper" style="display: block;">
+    <div id="start-wrapper">
+        <p>Want to play a round?</p>
+        <button id="start-btn">Start Game</button>
+    </div>
+    <div id="game-wrapper" style="display: none;">
         <p id="dcards">Dealer Cards:</p>
+        <p id="dpoints">Dealer points:</p>
+        <hr style="width: 50px;">
         <p id="pcards">Player Cards:</p>
-        <p id="psum">Player Points:</p>
-        <button>Hit</button>
-        <button>Stand</button>
+        <p id="ppoints">Player Points:</p>
+        <button id="hit-btn">Hit</button>
+        <button id="stand-btn">Stand</button>
+    </div>
+    <div id="modal" style="display: none;">
+        <p>Congratuwelldone!!!</p>
+        <button>Go again?</button>
     </div>
 </body>
 
