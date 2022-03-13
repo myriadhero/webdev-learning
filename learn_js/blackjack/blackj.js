@@ -31,6 +31,7 @@ class Deck{
 }
 
 let startWrapper = document.getElementById("start-wrapper");
+let messageElem = document.getElementById("message");
 let startBtn = document.getElementById("start-btn");
 
 let gameWrapper = document.getElementById("game-wrapper");
@@ -72,9 +73,8 @@ function startGame(){
     if (dpoints === 21 ){
         ppoints === 21 ? draw() : dealerWon();
     }
-    else if (ppoints===21){
-        playerWon();
-    }
+    checkPlayerScore();
+
 
 }
 
@@ -100,9 +100,77 @@ function stringCards(cards){
 }
 
 function hit(){
-
+    pcards.push(deck.takeTop());
+    ppoints = calcPoints(pcards);
+    pPointsElem.innerText = `Player Points: ${ppoints}`;
+    pCardsElem.innerText = `Player cards: ${stringCards(pcards)}`;
+    checkPlayerScore();
 }
 
 function stand(){
+    // hitBtn.disabled = true;
+    // standBtn.disabled = true;
+
+    while (dpoints<17){
+        dcards.push(deck.takeTop());
+        dpoints = calcPoints(dcards);
+    }
+    dPointsElem.innerText = `Dealer Points: ${dpoints}`;
+    dCardsElem.innerText = `Dealer cards: ${stringCards(dcards)}`;
+    checkDealerScore();
+}
+
+function checkPlayerScore(){
+    ppoints = calcPoints(pcards);
+    if (ppoints===21) {
+        playerWon();
+        reset();
+    }
+    else if (ppoints>21){
+        playerBust();
+        reset();
+    }
+}
+
+function checkDealerScore(){
+    if (dpoints>21){
+        dealerBust();
+    }
+    else {
+        ppoints>dpoints ? playerWon() : (ppoints===dpoints ? draw() : dealerWon());
+    }
+    reset();
+}
+
+function playerWon(){
+    alert("player won");
+}
+
+function playerBust(){
+    alert("player bust");
+}
+
+function dealerWon(){
+    alert("dealer won");
+}
+
+function dealerBust(){
+    alert("dealer bust");
+}
+
+function draw(){
+    alert("draw!");
+}
+
+function showModal(){
+    
+}
+
+function reset(){
+    messageElem.innerText = 'Play another?';
+
+    startWrapper.style.display = "block";
+    gameWrapper.style.display = 'none';
+
 
 }
