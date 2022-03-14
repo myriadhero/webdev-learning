@@ -1,5 +1,8 @@
 body {
-    background-color: green;
+    background-color: #096b00;
+    background-image: url("images/cards.svg");
+    background-size: 10%;
+
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: azure;
@@ -11,11 +14,20 @@ h1 {
     color: goldenrod;
 }
 
-p {
-    
-}
-
 #message-el {
     
     font-style: italic;
+}
+
+text {
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+#table-graphics {
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
