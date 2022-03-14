@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+    viewBox="0 0 400 150">
+  <defs>
+    <!-- The text path: see links above regarding coordinate system -->
+    <path d="M 50 50 C 150 150, 250 150, 350 50" id="txt-path"></path>
+  </defs>
+
+  <text fill="#9e9e9e" font-size="20" font-family="Helvetica Neue" font-weight="600">
+    <!-- This is the magic -->
+    <textPath startOffset="40" xlink:href="#txt-path">
+    Dealer must stand on all 17s.
+    </textPath>
+  </text>
+</svg>
