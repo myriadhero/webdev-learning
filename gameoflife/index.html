@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gameoflife.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+
+    </div>
+    <div id="controls">
+        
+        <label for="width">Width of the game in cells</label>
+        <input id="width" type="number" value="50">
+        <label for="height">Height of the game in cells</label>
+        <input id="height" type="number" value="50">
+        <label for="cycles">Cycles to run (-1 for infinite)</label>
+        <input id="cycles" type="number" value="-1">
+        <button id="run-btn">Run</button>
+        <div id="instructions">
+            <hr>
+            <ul>
+                <li>If a cell has fewer than 2 neighbours, it dies</li>
+                <li>If a cell has more than 3 neighbours, it dies</li>
+                <li>If a live cell has 2 neighbours, it lives</li>
+                <li>If a dead cell has exactly 3 neighbours, it becomes alive</li>
+                <li>Cells have 0.1% chance to become or stay alive randomly</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
