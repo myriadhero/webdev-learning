@@ -2,9 +2,9 @@
 
 - [x] Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
   - On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
-- [ ] On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
+- [x] On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
   - Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
-- [ ] On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
+- [x] On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
 - [ ] On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options)
   - Find pages with… “all these words:”
   - Find pages with… “this exact word or phrase:”
