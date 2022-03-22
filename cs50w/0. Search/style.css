@@ -36,6 +36,16 @@ body {
     width: auto;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
 html {
     height: 100%;
 }
