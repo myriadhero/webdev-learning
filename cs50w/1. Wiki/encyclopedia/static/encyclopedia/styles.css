@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+textarea {
+    height: auto;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.title-form {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.edit-btn {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    padding: 0;
+    border: solid black 1px;
+}
+
+.new-form > label {
+    padding-top: 15px;
+    display: block;
+}
+
+.new-form > .alert{
+    width: 50ch;
+}
+
+.new-form > input[type='text']{
+    width: 50ch;
+}
+
+.alert {
+    margin-top: 5px;
+}

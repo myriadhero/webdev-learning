@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Wiki/{{ entry.title }}
+{% endblock %}
+
+{% block body %}
+    <form class="title-form" action="{% url 'edit' entry.title %}" id="edit-form">
+        <h1>{{ entry.title }}</h1>
+        <button class="edit-btn btn btn-light" form="edit-form">
+            <img src="{% static 'encyclopedia/images/Black_pencil.svg' %}" alt="Edit" title="Edit {{ entry.title }}" height="100%">
+        </button>
+    </form>
+    
+
+    <div>
+        {{ entry.html|safe }}
+    </div>
+
+{% endblock %}

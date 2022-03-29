@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia/Search
+{% endblock %}
+
+{% block body %}
+    <h1>Search for "{{ query }}"</h1>
+
+    <div>
+        {% if matches %}
+        <h4>Possible matches:</h4>
+        <ul>
+            {% for title in matches %}
+                <li><a href="{% url 'title' title %}">{{ title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <h4>Doesn't look like anything to me 😔</h4>
+        {% endif %}
+    </div>
+
+{% endblock %}
